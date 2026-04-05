@@ -1,0 +1,197 @@
+{
+  "metadata": {
+    "title": "千石茶会 — 在东京体验正宗日本茶道",
+    "description": "在东京千石的宁静街区，体验传统日本茶道的精髓。与众不同的正宗茶道体验，感受一期一会的深远意境。"
+  },
+  "nav": {
+    "about": "茶道理念",
+    "plans": "体验方案",
+    "gallery": "画廊",
+    "access": "交通指南",
+    "booking": "预约",
+    "cancellation": "取消政策"
+  },
+  "hero": {
+    "subtitle": "千石茶会",
+    "heading": "茶之道，\n至臻体验",
+    "tagline": "在东京千石宁静的街区，开启一段走进茶道核心的亲密旅程——感受传统日本茶道的真谛。",
+    "cta": "预约体验"
+  },
+  "about": {
+    "label": "我们的理念",
+    "heading": "超越寻常",
+    "p1": "在千石安静的住宅街巷中，一间茶室承载着数百年的茶道传统。这里的茶道不是为游客表演的节目，而是一种修行、一种冥想、一种生活方式。",
+    "p2": "我们的茶道主人在里千家传统中修习二十余年，引导每位客人体验冲泡和品饮抹茶的深邃之美。每一个动作、每一次茶巾的折叠、每一次茶碗的转动，都承载着四百年来精炼的意义。",
+    "p3": "我们只接待小型团体，确保每位客人都能获得悉心关注，真正体验一期一会——每次相遇都是独一无二的珍贵时刻。",
+    "features": {
+      "authentic": {
+        "title": "正宗传统",
+        "description": "在正宗茶室中体验里千家流派茶道"
+      },
+      "intimate": {
+        "title": "私密空间",
+        "description": "2至6位客人的小团体，提供深度个人化体验"
+      },
+      "seasonal": {
+        "title": "四季之美",
+        "description": "和果子、茶花、挂轴——每一场茶会都映射着当季之美"
+      }
+    }
+  },
+  "plans": {
+    "label": "体验方案",
+    "heading": "选择您的旅程",
+    "description": "三种精心策划的体验方案，提供不同深度的茶道之旅。",
+    "perPerson": "每人",
+    "minutes": "分钟",
+    "maxGuests": "最多{count}位客人",
+    "reserve": "预约",
+    "recommended": "推荐",
+    "ume": {
+      "name": "梅",
+      "subtitle": "入门体验",
+      "description": "优雅地走进茶道世界。观赏并参与简化版茶道仪式，同时品尝当季和果子。",
+      "includes": [
+        "薄茶一杯",
+        "当季和果子",
+        "茶道基本原则讲解",
+        "拍照留念"
+      ]
+    },
+    "take": {
+      "name": "竹",
+      "subtitle": "深度沉浸",
+      "description": "更深入地体验茶道。学习基本动作和茶道哲学，亲手冲泡一碗抹茶。",
+      "includes": [
+        "完整茶道仪式观赏",
+        "亲手冲泡抹茶体验",
+        "两款当季和果子",
+        "茶道器具鉴赏",
+        "和服穿着体验（可选）"
+      ]
+    },
+    "matsu": {
+      "name": "松",
+      "subtitle": "茶道精髓",
+      "description": "终极茶道体验。从庭院小径到最后的鞠躬，体验数百年来传承的正式茶会的每一个环节。",
+      "includes": [
+        "露地（庭院小径）净化之行",
+        "正式茶事（浓茶与薄茶）",
+        "怀石风格轻食",
+        "特选当季和果子",
+        "茶道器具研习与历史讲解",
+        "书法或花道迷你工坊",
+        "参与证书"
+      ]
+    }
+  },
+  "gallery": {
+    "label": "画廊",
+    "heading": "静谧时光",
+    "images": {
+      "chashitsu": "茶室",
+      "temae": "点前",
+      "wagashi": "和果子",
+      "chakin": "茶道器具",
+      "roji": "露地",
+      "chabana": "茶花"
+    }
+  },
+  "bookingCta": {
+    "heading": "开启您的旅程",
+    "description": "预约茶道体验，步入宁静与传统的世界。",
+    "cta": "立即预约"
+  },
+  "access": {
+    "label": "交通指南",
+    "heading": "如何到达",
+    "address": "东京都文京区千石",
+    "station": "都营三田线 千石站 步行5分钟",
+    "description": "我们的茶室坐落在文京区千石的宁静住宅区，远离东京市中心的喧嚣。这个街区从容不迫的氛围本身就是体验的一部分。",
+    "directions": {
+      "title": "路线指引",
+      "step1": "从千石站A4出口出站",
+      "step2": "沿白山通北行约3分钟",
+      "step3": "在小神社处右转",
+      "step4": "前行约2分钟，入口在左侧"
+    }
+  },
+  "tripadvisor": {
+    "heading": "客人评价",
+    "description": "阅读我们客人对体验的评价。",
+    "cta": "在TripAdvisor上阅读评价",
+    "rating": "非常好",
+    "basedOn": "基于客人评价"
+  },
+  "booking": {
+    "heading": "预约体验",
+    "description": "选择您心仪的方案和日期。我们将在24小时内确认您的预约。",
+    "fields": {
+      "plan": "选择方案",
+      "date": "首选日期",
+      "timeSlot": "首选时间",
+      "guests": "人数",
+      "name": "姓名",
+      "email": "电子邮箱",
+      "phone": "电话号码（选填）",
+      "country": "所在国家",
+      "requests": "特殊要求或饮食限制",
+      "agreeToPolicy": "我同意取消政策"
+    },
+    "timeSlots": {
+      "morning": "上午 — 10:00",
+      "afternoon": "下午 — 14:00",
+      "evening": "傍晚 — 16:00"
+    },
+    "submit": "提交预约",
+    "submitting": "提交中...",
+    "success": {
+      "heading": "预约已收到",
+      "message": "感谢您的预约。我们将在24小时内发送确认邮件。",
+      "backHome": "返回首页"
+    }
+  },
+  "cancellation": {
+    "heading": "取消政策",
+    "policy": {
+      "intro": "我们理解计划可能会变更。请查阅以下取消政策。",
+      "rules": [
+        { "period": "7天以上", "refund": "全额退款" },
+        { "period": "3-6天前", "refund": "退款50%" },
+        { "period": "1-2天前", "refund": "不予退款（80%取消费）" },
+        { "period": "当天/未出席", "refund": "不予退款" }
+      ],
+      "note": "所有取消请求将在2个工作日内处理。退款将退回原支付方式。"
+    },
+    "form": {
+      "heading": "申请取消",
+      "description": "请提供您的预约信息以申请取消。",
+      "fields": {
+        "email": "预约使用的邮箱",
+        "name": "姓名",
+        "bookingDate": "预约日期",
+        "reason": "取消原因（选填）"
+      },
+      "submit": "提交取消申请",
+      "submitting": "提交中...",
+      "success": {
+        "heading": "申请已收到",
+        "message": "我们将在2个工作日内发送确认邮件。"
+      }
+    }
+  },
+  "footer": {
+    "tagline": "茶之道，至臻体验",
+    "contact": "联系方式",
+    "links": "快速链接",
+    "followUs": "关注我们",
+    "rights": "版权所有。",
+    "instagram": "Instagram",
+    "tripadvisor": "TripAdvisor"
+  },
+  "common": {
+    "learnMore": "了解更多",
+    "backToTop": "回到顶部",
+    "loading": "加载中..."
+  }
+}

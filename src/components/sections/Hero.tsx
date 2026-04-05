@@ -1,0 +1,94 @@
+"use client";
+
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
+import { motion } from "framer-motion";
+
+export function Hero() {
+  const t = useTranslations("hero");
+
+  return (
+    <section className="relative flex min-h-screen items-center justify-center overflow-hidden">
+      {/* Background */}
+      <div className="absolute inset-0 bg-charcoal">
+        {/* Placeholder background — replace with actual image */}
+        <div
+          className="absolute inset-0 opacity-40"
+          style={{
+            background:
+              "linear-gradient(135deg, #2d4a2d 0%, #1a1a1a 40%, #1a1a1a 60%, #2d4a2d 100%)",
+          }}
+        />
+        {/* Subtle texture overlay */}
+        <div
+          className="absolute inset-0 opacity-5"
+          style={{
+            backgroundImage:
+              "radial-gradient(circle at 20% 50%, rgba(200,164,92,0.3) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(45,74,45,0.4) 0%, transparent 50%)",
+          }}
+        />
+      </div>
+
+      {/* Gradient overlay for readability */}
+      <div className="absolute inset-0 bg-gradient-to-b from-charcoal/60 via-transparent to-charcoal" />
+
+      {/* Content */}
+      <div className="relative z-10 mx-auto max-w-4xl px-4 text-center">
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="mb-6 font-[family-name:var(--font-heading)] text-lg tracking-[0.3em] text-gold"
+        >
+          {t("subtitle")}
+        </motion.p>
+
+        <motion.h1
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+          className="font-[family-name:var(--font-heading)] text-4xl font-bold leading-tight text-cream sm:text-5xl md:text-6xl lg:text-7xl whitespace-pre-line"
+        >
+          {t("heading")}
+        </motion.h1>
+
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
+          className="mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-cream/70 sm:text-xl"
+        >
+          {t("tagline")}
+        </motion.p>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.8 }}
+          className="mt-12"
+        >
+          <Link
+            href="/booking"
+            className="inline-block border border-gold bg-transparent px-10 py-4 text-sm font-medium uppercase tracking-[0.15em] text-gold transition-all duration-300 hover:bg-gold hover:text-charcoal"
+          >
+            {t("cta")}
+          </Link>
+        </motion.div>
+      </div>
+
+      {/* Scroll indicator */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.5 }}
+        className="absolute bottom-8 left-1/2 -translate-x-1/2"
+      >
+        <motion.div
+          animate={{ y: [0, 8, 0] }}
+          transition={{ duration: 2, repeat: Infinity }}
+          className="h-8 w-[1px] bg-gradient-to-b from-gold/60 to-transparent"
+        />
+      </motion.div>
+    </section>
+  );
+}

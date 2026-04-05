@@ -1,0 +1,30 @@
+databases:
+  - name: sengoku-chakai-db
+    plan: free
+    databaseName: sengoku_chakai
+    user: sengoku_chakai_user
+
+services:
+  - type: web
+    name: sengoku-chakai
+    runtime: node
+    plan: free
+    buildCommand: npm install && npx prisma generate && npx prisma db push && npm run build
+    startCommand: npm start
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: sengoku-chakai-db
+          property: connectionURI
+      - key: STRIPE_SECRET_KEY
+        sync: false
+      - key: NEXT_PUBLIC_STRIPE_ENABLED
+        value: "true"
+      - key: RESEND_API_KEY
+        sync: false
+      - key: FROM_EMAIL
+        sync: false
+      - key: OPERATOR_EMAIL
+        sync: false
+      - key: NEXT_PUBLIC_BASE_URL
+        sync: false

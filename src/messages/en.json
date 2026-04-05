@@ -1,0 +1,197 @@
+{
+  "metadata": {
+    "title": "Sengoku Chakai — Authentic Japanese Tea Ceremony Experience in Tokyo",
+    "description": "Experience the art of traditional Japanese tea ceremony in the serene neighborhood of Sengoku, Tokyo. An intimate, authentic chado experience unlike any other."
+  },
+  "nav": {
+    "about": "Philosophy",
+    "plans": "Experiences",
+    "gallery": "Gallery",
+    "access": "Access",
+    "booking": "Reserve",
+    "cancellation": "Cancellation Policy"
+  },
+  "hero": {
+    "subtitle": "千石茶会",
+    "heading": "The Way of Tea,\nAuthentically Yours",
+    "tagline": "An intimate journey into the heart of chado — traditional Japanese tea ceremony — in the tranquil neighborhood of Sengoku, Tokyo.",
+    "cta": "Reserve Your Experience"
+  },
+  "about": {
+    "label": "Our Philosophy",
+    "heading": "Beyond the Ordinary",
+    "p1": "In the quiet residential streets of Sengoku, far from the crowds of Asakusa and Shibuya, lies a tea room where the centuries-old tradition of chado lives and breathes. Here, tea ceremony is not a performance for tourists — it is a practice, a meditation, a way of being.",
+    "p2": "Our host, trained in the Urasenke tradition for over two decades, guides each guest through the profound simplicity of preparing and receiving matcha. Every gesture, every placement of the chakin, every rotation of the tea bowl carries meaning refined over four hundred years.",
+    "p3": "We welcome only small groups, ensuring each guest receives personal attention and the space to truly experience ichigo ichie — the once-in-a-lifetime nature of each encounter.",
+    "features": {
+      "authentic": {
+        "title": "Authentic Tradition",
+        "description": "Urasenke-school tea ceremony practiced in a genuine chashitsu (tea room)"
+      },
+      "intimate": {
+        "title": "Intimate Setting",
+        "description": "Small groups of 2-6 guests for a deeply personal experience"
+      },
+      "seasonal": {
+        "title": "Seasonal Beauty",
+        "description": "Each ceremony reflects the season through wagashi, chabana, and scroll selection"
+      }
+    }
+  },
+  "plans": {
+    "label": "Experience Plans",
+    "heading": "Choose Your Journey",
+    "description": "Three carefully curated experiences, each offering a different depth of engagement with the Way of Tea.",
+    "perPerson": "per person",
+    "minutes": "min",
+    "maxGuests": "Max {count} guests",
+    "reserve": "Reserve",
+    "recommended": "Recommended",
+    "ume": {
+      "name": "梅 Ume",
+      "subtitle": "Introduction",
+      "description": "A graceful introduction to the world of chado. Observe and participate in a simplified tea ceremony while enjoying seasonal wagashi.",
+      "includes": [
+        "Welcome tea (usucha)",
+        "Seasonal wagashi sweet",
+        "Brief explanation of tea ceremony principles",
+        "Photo opportunities"
+      ]
+    },
+    "take": {
+      "name": "竹 Take",
+      "subtitle": "Immersion",
+      "description": "A deeper engagement with the tea ceremony. Learn the fundamental movements and philosophy of chado, and prepare your own bowl of matcha.",
+      "includes": [
+        "Full tea ceremony observation",
+        "Hands-on matcha preparation",
+        "Two seasonal wagashi sweets",
+        "Tea utensil appreciation",
+        "Kimono wearing experience (optional)"
+      ]
+    },
+    "matsu": {
+      "name": "松 Matsu",
+      "subtitle": "The Complete Way",
+      "description": "The definitive chado experience. From the garden path to the final bow, experience every element of an authentic tea gathering as it has been practiced for centuries.",
+      "includes": [
+        "Roji (garden path) purification walk",
+        "Full formal tea ceremony (koicha & usucha)",
+        "Kaiseki-inspired light meal",
+        "Premium seasonal wagashi",
+        "Tea utensil study with historical context",
+        "Calligraphy or ikebana mini-workshop",
+        "Certificate of participation"
+      ]
+    }
+  },
+  "gallery": {
+    "label": "Gallery",
+    "heading": "Moments of Stillness",
+    "images": {
+      "chashitsu": "The tea room",
+      "temae": "The preparation",
+      "wagashi": "Seasonal sweets",
+      "chakin": "Tea utensils",
+      "roji": "The garden path",
+      "chabana": "Tea flowers"
+    }
+  },
+  "bookingCta": {
+    "heading": "Begin Your Journey",
+    "description": "Reserve your tea ceremony experience and step into a world of tranquility and tradition.",
+    "cta": "Make a Reservation"
+  },
+  "access": {
+    "label": "Access",
+    "heading": "Finding Us",
+    "address": "Sengoku, Bunkyo-ku, Tokyo",
+    "station": "Sengoku Station (Toei Mita Line) — 5 min walk",
+    "description": "Nestled in the quiet residential neighborhood of Sengoku in Bunkyo ward, our tea room offers a retreat from the energy of central Tokyo. The area's unhurried atmosphere is itself part of the experience.",
+    "directions": {
+      "title": "Directions",
+      "step1": "Exit Sengoku Station (A4 exit)",
+      "step2": "Walk north along Hakusan-dori for 3 minutes",
+      "step3": "Turn right at the small shrine",
+      "step4": "Our entrance is 2 minutes ahead on the left"
+    }
+  },
+  "tripadvisor": {
+    "heading": "Guest Reviews",
+    "description": "Read what our guests say about their experience.",
+    "cta": "Read Reviews on TripAdvisor",
+    "rating": "Excellent",
+    "basedOn": "Based on guest reviews"
+  },
+  "booking": {
+    "heading": "Reserve Your Experience",
+    "description": "Select your preferred plan and date. We will confirm your reservation within 24 hours.",
+    "fields": {
+      "plan": "Select Plan",
+      "date": "Preferred Date",
+      "timeSlot": "Preferred Time",
+      "guests": "Number of Guests",
+      "name": "Full Name",
+      "email": "Email Address",
+      "phone": "Phone Number (optional)",
+      "country": "Country of Residence",
+      "requests": "Special Requests or Dietary Needs",
+      "agreeToPolicy": "I agree to the cancellation policy"
+    },
+    "timeSlots": {
+      "morning": "Morning — 10:00",
+      "afternoon": "Afternoon — 14:00",
+      "evening": "Late Afternoon — 16:00"
+    },
+    "submit": "Submit Reservation",
+    "submitting": "Submitting...",
+    "success": {
+      "heading": "Reservation Received",
+      "message": "Thank you for your reservation. We will send a confirmation to your email within 24 hours.",
+      "backHome": "Return to Homepage"
+    }
+  },
+  "cancellation": {
+    "heading": "Cancellation Policy",
+    "policy": {
+      "intro": "We understand that plans may change. Please review our cancellation policy below.",
+      "rules": [
+        { "period": "7+ days before", "refund": "Full refund" },
+        { "period": "3–6 days before", "refund": "50% refund (50% cancellation fee)" },
+        { "period": "1–2 days before", "refund": "20% refund (80% cancellation fee)" },
+        { "period": "Same day / No-show", "refund": "No refund (100% cancellation fee)" }
+      ],
+      "note": "All cancellation requests will be processed within 2 business days. Refunds will be issued to the original payment method."
+    },
+    "form": {
+      "heading": "Request Cancellation",
+      "description": "Please provide your booking details to request a cancellation.",
+      "fields": {
+        "email": "Email used for booking",
+        "name": "Full Name",
+        "bookingDate": "Booking Date",
+        "reason": "Reason for cancellation (optional)"
+      },
+      "submit": "Submit Cancellation Request",
+      "submitting": "Submitting...",
+      "success": {
+        "heading": "Request Received",
+        "message": "We have received your cancellation request. You will receive a confirmation email within 2 business days."
+      }
+    }
+  },
+  "footer": {
+    "tagline": "The Way of Tea, Authentically Yours",
+    "contact": "Contact",
+    "links": "Quick Links",
+    "followUs": "Follow Us",
+    "rights": "All rights reserved.",
+    "instagram": "Instagram",
+    "tripadvisor": "TripAdvisor"
+  },
+  "common": {
+    "learnMore": "Learn More",
+    "backToTop": "Back to Top",
+    "loading": "Loading..."
+  }
+}
