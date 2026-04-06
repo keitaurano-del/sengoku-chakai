@@ -16,7 +16,7 @@ export function Hero() {
           className="absolute inset-0 opacity-40"
           style={{
             background:
-              "linear-gradient(135deg, #2d4a2d 0%, #1a1a1a 40%, #1a1a1a 60%, #2d4a2d 100%)",
+              "linear-gradient(135deg, #4A7C59 0%, #2C2C2C 40%, #2C2C2C 60%, #4A7C59 100%)",
           }}
         />
         {/* Subtle texture overlay */}
@@ -31,6 +31,18 @@ export function Hero() {
 
       {/* Gradient overlay for readability */}
       <div className="absolute inset-0 bg-gradient-to-b from-charcoal/60 via-transparent to-charcoal" />
+
+      {/* Max guests badge */}
+      <motion.div
+        initial={{ opacity: 0, x: 20 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8, delay: 1.2 }}
+        className="absolute right-6 top-24 z-20 sm:right-10 sm:top-28"
+      >
+        <span className="inline-block border border-gold/40 bg-charcoal/70 px-3 py-1.5 text-xs tracking-widest text-gold backdrop-blur-sm">
+          {t("maxGuests")}
+        </span>
+      </motion.div>
 
       {/* Content */}
       <div className="relative z-10 mx-auto max-w-4xl px-4 text-center">

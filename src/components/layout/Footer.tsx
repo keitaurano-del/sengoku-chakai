@@ -27,7 +27,7 @@ export function Footer() {
             </h3>
             <ul className="space-y-2">
               <li>
-                <a href="/#about" className="text-sm text-cream/60 transition-colors hover:text-gold">
+                <a href="/#experience" className="text-sm text-cream/60 transition-colors hover:text-gold">
                   {nav("about")}
                 </a>
               </li>

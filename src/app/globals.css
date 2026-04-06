@@ -1,16 +1,16 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-charcoal: #1a1a1a;
-  --color-charcoal-light: #2a2a2a;
-  --color-deep-green: #2d4a2d;
-  --color-deep-green-light: #3d6a3d;
+  --color-charcoal: #2C2C2C;
+  --color-charcoal-light: #3a3a3a;
+  --color-deep-green: #4A7C59;
+  --color-deep-green-light: #5A9C69;
   --color-gold: #c8a45c;
   --color-gold-light: #d4b876;
   --color-cream: #f5f0e8;
   --color-cream-dark: #e8e0d0;
 
-  --font-heading: "Playfair Display", serif;
+  --font-heading: "Cormorant Garamond", serif;
   --font-body: "Inter", sans-serif;
   --font-jp: "Noto Sans JP", sans-serif;
   --font-zh: "Noto Sans SC", sans-serif;

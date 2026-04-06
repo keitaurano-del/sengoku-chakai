@@ -13,16 +13,17 @@
   },
   "hero": {
     "subtitle": "千石茶会",
-    "heading": "The Way of Tea,\nAuthentically Yours",
+    "heading": "A Quiet Moment.\nA Lifetime of Memory.",
     "tagline": "An intimate journey into the heart of chado — traditional Japanese tea ceremony — in the tranquil neighborhood of Sengoku, Tokyo.",
-    "cta": "Reserve Your Experience"
+    "cta": "Reserve Your Experience",
+    "maxGuests": "Max 6 guests per session"
   },
-  "about": {
-    "label": "Our Philosophy",
-    "heading": "Beyond the Ordinary",
-    "p1": "In the quiet residential streets of Sengoku, far from the crowds of Asakusa and Shibuya, lies a tea room where the centuries-old tradition of chado lives and breathes. Here, tea ceremony is not a performance for tourists — it is a practice, a meditation, a way of being.",
-    "p2": "Our host, trained in the Urasenke tradition for over two decades, guides each guest through the profound simplicity of preparing and receiving matcha. Every gesture, every placement of the chakin, every rotation of the tea bowl carries meaning refined over four hundred years.",
-    "p3": "We welcome only small groups, ensuring each guest receives personal attention and the space to truly experience ichigo ichie — the once-in-a-lifetime nature of each encounter.",
+  "experience": {
+    "label": "Your Experience",
+    "heading": "What Awaits You",
+    "p1": "Step through the garden gate and leave the city behind. In our intimate tea room in Sengoku, you will experience the profound stillness of an authentic tea ceremony — not as a spectator, but as a welcomed guest.",
+    "p2": "From the first bow to the last sip of matcha, every moment is crafted to immerse you in the beauty of wabi-sabi. Feel the warmth of a hand-thrown tea bowl, taste seasonal wagashi made that morning, and discover the meditative rhythm of chado.",
+    "p3": "Whether this is your first encounter with tea ceremony or a return to a beloved practice, our host will guide you with warmth and expertise through an experience you will carry with you long after you leave.",
     "features": {
       "authentic": {
         "title": "Authentic Tradition",
@@ -47,6 +48,7 @@
     "maxGuests": "Max {count} guests",
     "reserve": "Reserve",
     "recommended": "Recommended",
+    "mostPopular": "Most Popular",
     "ume": {
       "name": "梅 Ume",
       "subtitle": "Introduction",
@@ -121,7 +123,54 @@
     "description": "Read what our guests say about their experience.",
     "cta": "Read Reviews on TripAdvisor",
     "rating": "Excellent",
-    "basedOn": "Based on guest reviews"
+    "basedOn": "Based on guest reviews",
+    "reviews": {
+      "review1": {
+        "comment": "The most authentic tea ceremony experience I've had in Japan. Our host was incredibly gracious and knowledgeable. Far from the tourist traps — this is the real thing.",
+        "author": "Sarah M. — New York, USA"
+      },
+      "review2": {
+        "comment": "A truly meditative experience. The attention to detail, from the seasonal wagashi to the hand-selected scroll, was extraordinary. We felt like honoured guests, not tourists.",
+        "author": "James T. — London, UK"
+      },
+      "review3": {
+        "comment": "We came for tea and left with a completely new understanding of Japanese culture. The intimate setting and patient guidance made all the difference. Highly recommend the Take plan.",
+        "author": "Emily R. — Melbourne, Australia"
+      }
+    }
+  },
+  "whatToPrepare": {
+    "label": "Before You Visit",
+    "heading": "What to Prepare",
+    "description": "A few simple preparations to help you make the most of your tea ceremony experience.",
+    "badgeRequired": "Required",
+    "badgeIfPossible": "If possible",
+    "items": {
+      "whiteSocks": {
+        "title": "White Socks",
+        "reason": "Guests enter the tea room in socks. White or light-colored socks are traditional and show respect for the clean tatami space."
+      },
+      "removeAccessories": {
+        "title": "Remove Watches & Rings",
+        "reason": "Jewelry and watches can scratch the delicate tea bowls and utensils, some of which are centuries old."
+      },
+      "avoidPerfume": {
+        "title": "Avoid Strong Perfume",
+        "reason": "The tea ceremony engages all senses, including smell. Strong fragrances can interfere with the subtle aroma of the matcha and incense."
+      },
+      "comfortableClothing": {
+        "title": "Wear Comfortable Clothing",
+        "reason": "You will be seated on tatami for the duration of the ceremony. Loose, comfortable clothing makes the experience more enjoyable."
+      }
+    }
+  },
+  "host": {
+    "label": "Your Host",
+    "heading": "The Tea Master",
+    "name": "Tea Master Yamamoto",
+    "years": "25+ years of Urasenke practice",
+    "philosophy": "In tea, there is no competition, no hurry, no judgement — only the beauty of this single, unrepeatable moment shared between host and guest.",
+    "bio": "Trained in the Urasenke tradition since youth, our tea master has dedicated over two decades to the study and teaching of chado. Having welcomed guests from more than 30 countries, they bring warmth, patience, and a deep reverence for the Way of Tea to every ceremony."
   },
   "booking": {
     "heading": "Reserve Your Experience",

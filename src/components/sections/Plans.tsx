@@ -20,18 +20,26 @@ export function Plans() {
         </FadeIn>
 
         <div className="grid gap-8 lg:grid-cols-3">
-          {PLANS.map((plan, i) => {
+          {[PLANS[1], PLANS[0], PLANS[2]].map((plan, i) => {
             const isRecommended = "recommended" in plan && plan.recommended;
+            const isMostPopular = plan.id === "take";
             return (
               <FadeIn key={plan.id} delay={i * 0.15}>
                 <div
                   className={`relative flex h-full flex-col border p-8 transition-all duration-300 hover:border-gold/50 ${
-                    isRecommended
+                    isMostPopular
+                      ? "border-gold bg-deep-green/20"
+                      : isRecommended
                       ? "border-gold bg-deep-green/20"
                       : "border-cream/10 bg-charcoal-light"
                   }`}
                 >
-                  {isRecommended && (
+                  {isMostPopular && (
+                    <span className="absolute -top-3 left-8 bg-gold px-4 py-1 text-xs font-bold uppercase tracking-wider text-charcoal">
+                      {t("mostPopular")}
+                    </span>
+                  )}
+                  {isRecommended && !isMostPopular && (
                     <span className="absolute -top-3 left-8 bg-gold px-4 py-1 text-xs font-bold uppercase tracking-wider text-charcoal">
                       {t("recommended")}
                     </span>
@@ -53,6 +61,9 @@ export function Plans() {
                     <span className="ml-2 text-sm text-cream/50">
                       {t("perPerson")}
                     </span>
+                    <p className="mt-1 text-xs text-cream/40">
+                      ~${Math.round(plan.price / 150)} USD
+                    </p>
                     <div className="mt-2 flex gap-4 text-xs text-cream/50">
                       <span>{plan.duration} {t("minutes")}</span>
                       <span>&bull;</span>
@@ -76,7 +87,7 @@ export function Plans() {
                   <Link
                     href={`/booking?plan=${plan.id}`}
                     className={`block text-center py-3 text-sm font-medium uppercase tracking-[0.1em] transition-all duration-300 ${
-                      isRecommended
+                      isMostPopular || isRecommended
                         ? "bg-gold text-charcoal hover:bg-gold-light"
                         : "border border-gold text-gold hover:bg-gold hover:text-charcoal"
                     }`}

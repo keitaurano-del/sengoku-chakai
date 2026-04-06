@@ -2,15 +2,16 @@ import type { Metadata } from "next";
 import { NextIntlClientProvider, useMessages } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
-import { Playfair_Display, Inter, Noto_Sans_JP, Noto_Sans_SC } from "next/font/google";
+import { Cormorant_Garamond, Inter, Noto_Sans_JP, Noto_Sans_SC } from "next/font/google";
 import { routing } from "@/i18n/routing";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import "../globals.css";
 
-const playfair = Playfair_Display({
+const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
   variable: "--font-heading",
+  weight: ["400", "500", "600", "700"],
   display: "swap",
 });
 
@@ -71,7 +72,7 @@ export default async function LocaleLayout({ children, params }: Props) {
   return (
     <html
       lang={locale}
-      className={`${playfair.variable} ${inter.variable} ${notoJP.variable} ${notoSC.variable} antialiased`}
+      className={`${cormorant.variable} ${inter.variable} ${notoJP.variable} ${notoSC.variable} antialiased`}
     >
       <body className={`min-h-screen flex flex-col ${fontClass}`}>
         <NextIntlClientProvider locale={locale} messages={messages}>
