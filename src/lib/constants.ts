@@ -38,7 +38,7 @@ export const TIME_SLOTS = [
 export const TRIPADVISOR_URL = "https://www.tripadvisor.com/";
 
 export const CONTACT = {
-  email: "info@sengoku-chakai.com",
+  email: "info@en-chakai.com",
   phone: "+81-3-XXXX-XXXX",
   address: {
     en: "Sengoku, Bunkyo-ku, Tokyo",

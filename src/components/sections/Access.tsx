@@ -55,7 +55,7 @@ export function Access() {
           <FadeIn delay={0.2}>
             <div className="aspect-square overflow-hidden bg-charcoal-light lg:aspect-[4/3]">
               <iframe
-                title="Sengoku location"
+                title="En Chakai location"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.5!2d139.745!3d35.73!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c49ef!2sSengoku%20Station!5e0!3m2!1sen!2sjp!4v1"
                 width="100%"
                 height="100%"

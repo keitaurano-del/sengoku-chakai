@@ -13,7 +13,7 @@ export function Footer() {
           {/* Brand */}
           <div>
             <p className="font-[family-name:var(--font-heading)] text-2xl font-bold text-cream">
-              千石茶会
+              円茶会
             </p>
             <p className="mt-3 text-sm leading-relaxed text-cream/50">
               {t("tagline")}
@@ -73,7 +73,7 @@ export function Footer() {
         </div>
 
         <div className="mt-12 border-t border-cream/10 pt-8 text-center text-xs text-cream/30">
-          &copy; {new Date().getFullYear()} 千石茶会 Sengoku Chakai. {t("rights")}
+          &copy; {new Date().getFullYear()} 円茶会 En Chakai. {t("rights")}
         </div>
       </div>
     </footer>

@@ -25,7 +25,7 @@ export function Header() {
           href="/"
           className="font-[family-name:var(--font-heading)] text-xl font-bold tracking-wide text-cream hover:text-gold transition-colors"
         >
-          千石茶会
+          円茶会
         </Link>
 
         {/* Desktop nav */}

@@ -10,7 +10,7 @@ function getResend(): Resend {
 }
 
 const FROM_EMAIL = () => process.env.FROM_EMAIL || "onboarding@resend.dev";
-const OPERATOR_EMAIL = () => process.env.OPERATOR_EMAIL || "info@sengoku-chakai.com";
+const OPERATOR_EMAIL = () => process.env.OPERATOR_EMAIL || "info@en-chakai.com";
 
 export async function sendBookingNotification(data: {
   plan: string;
@@ -48,10 +48,10 @@ export async function sendBookingNotification(data: {
   await resend.emails.send({
     from: FROM_EMAIL(),
     to: data.email,
-    subject: "Reservation Received — Sengoku Chakai",
+    subject: "Reservation Received — En Chakai",
     html: `
       <div style="font-family:serif;max-width:600px;margin:0 auto;color:#1a1a1a;">
-        <h1 style="color:#2d4a2d;border-bottom:2px solid #c8a45c;padding-bottom:12px;">千石茶会</h1>
+        <h1 style="color:#2d4a2d;border-bottom:2px solid #c8a45c;padding-bottom:12px;">円茶会</h1>
         <p>Dear ${data.name},</p>
         <p>Thank you for your reservation request. We have received the following details:</p>
         <ul>
@@ -63,7 +63,7 @@ export async function sendBookingNotification(data: {
         <p>We will confirm your reservation within 24 hours. If you have any questions, please reply to this email.</p>
         <p style="color:#c8a45c;font-style:italic;">一期一会 — Treasure every encounter, for it will never recur.</p>
         <hr style="border:none;border-top:1px solid #e8e0d0;margin:24px 0;" />
-        <p style="font-size:12px;color:#888;">Sengoku Chakai | Sengoku, Bunkyo-ku, Tokyo</p>
+        <p style="font-size:12px;color:#888;">En Chakai | Bunkyo-ku, Tokyo</p>
       </div>
     `,
   });

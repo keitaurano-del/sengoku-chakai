@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "Sengoku Chakai — Authentic Japanese Tea Ceremony Experience in Tokyo",
-    "description": "Experience the art of traditional Japanese tea ceremony in the serene neighborhood of Sengoku, Tokyo. An intimate, authentic chado experience unlike any other."
+    "title": "En Chakai — Authentic Japanese Tea Ceremony Experience in Tokyo",
+    "description": "Experience the art of traditional Japanese tea ceremony in Tokyo. An intimate, authentic chado experience unlike any other."
   },
   "nav": {
     "about": "Philosophy",
@@ -12,16 +12,16 @@
     "cancellation": "Cancellation Policy"
   },
   "hero": {
-    "subtitle": "千石茶会",
+    "subtitle": "円茶会",
     "heading": "A Quiet Moment.\nA Lifetime of Memory.",
-    "tagline": "An intimate journey into the heart of chado — traditional Japanese tea ceremony — in the tranquil neighborhood of Sengoku, Tokyo.",
+    "tagline": "An intimate journey into the heart of chado — traditional Japanese tea ceremony — in Tokyo.",
     "cta": "Reserve Your Experience",
     "maxGuests": "Max 6 guests per session"
   },
   "experience": {
     "label": "Your Experience",
     "heading": "What Awaits You",
-    "p1": "Step through the garden gate and leave the city behind. In our intimate tea room in Sengoku, you will experience the profound stillness of an authentic tea ceremony — not as a spectator, but as a welcomed guest.",
+    "p1": "Step through the garden gate and leave the city behind. In our intimate tea room, you will experience the profound stillness of an authentic tea ceremony — not as a spectator, but as a welcomed guest.",
     "p2": "From the first bow to the last sip of matcha, every moment is crafted to immerse you in the beauty of wabi-sabi. Feel the warmth of a hand-thrown tea bowl, taste seasonal wagashi made that morning, and discover the meditative rhythm of chado.",
     "p3": "Whether this is your first encounter with tea ceremony or a return to a beloved practice, our host will guide you with warmth and expertise through an experience you will carry with you long after you leave.",
     "features": {
@@ -109,7 +109,7 @@
     "heading": "Finding Us",
     "address": "Sengoku, Bunkyo-ku, Tokyo",
     "station": "Sengoku Station (Toei Mita Line) — 5 min walk",
-    "description": "Nestled in the quiet residential neighborhood of Sengoku in Bunkyo ward, our tea room offers a retreat from the energy of central Tokyo. The area's unhurried atmosphere is itself part of the experience.",
+    "description": "Nestled in the quiet residential neighborhood of Bunkyo ward, our tea room offers a retreat from the energy of central Tokyo. The area's unhurried atmosphere is itself part of the experience.",
     "directions": {
       "title": "Directions",
       "step1": "Exit Sengoku Station (A4 exit)",
