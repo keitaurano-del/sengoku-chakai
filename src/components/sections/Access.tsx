@@ -8,7 +8,7 @@ export function Access() {
   const t = useTranslations("access");
 
   return (
-    <section id="access" className="bg-charcoal py-24 sm:py-32">
+    <section id="access" className="bg-charcoal py-16 sm:py-24 md:py-32">
       <Container>
         <FadeIn>
           <SectionHeading
@@ -17,27 +17,27 @@ export function Access() {
           />
         </FadeIn>
 
-        <div className="grid gap-12 lg:grid-cols-2">
+        <div className="grid gap-8 lg:grid-cols-2 lg:gap-12">
           {/* Info */}
           <FadeIn>
             <div>
-              <div className="flex items-start gap-3 mb-6">
-                <MapPin className="mt-1 text-gold" size={20} />
+              <div className="flex items-start gap-3 mb-5 sm:mb-6">
+                <MapPin className="mt-0.5 text-gold shrink-0" size={18} />
                 <div>
-                  <p className="text-lg font-medium text-cream">{t("address")}</p>
-                  <p className="mt-1 text-sm text-cream/60">{t("station")}</p>
+                  <p className="text-base font-medium text-cream sm:text-lg">{t("address")}</p>
+                  <p className="mt-0.5 text-sm text-cream/60">{t("station")}</p>
                 </div>
               </div>
 
-              <p className="mb-8 text-base leading-relaxed text-cream/70">
+              <p className="mb-6 text-sm leading-relaxed text-cream/70 sm:mb-8 sm:text-base">
                 {t("description")}
               </p>
 
               <div>
-                <h3 className="mb-4 text-sm font-medium uppercase tracking-[0.15em] text-gold">
+                <h3 className="mb-3 text-xs font-medium uppercase tracking-[0.15em] text-gold sm:mb-4 sm:text-sm">
                   {t("directions.title")}
                 </h3>
-                <ol className="space-y-3">
+                <ol className="space-y-2.5 sm:space-y-3">
                   {(["step1", "step2", "step3", "step4"] as const).map((step, i) => (
                     <li key={step} className="flex items-start gap-3 text-sm text-cream/70">
                       <span className="flex h-6 w-6 shrink-0 items-center justify-center border border-gold/30 text-xs text-gold">
@@ -53,7 +53,7 @@ export function Access() {
 
           {/* Map */}
           <FadeIn delay={0.2}>
-            <div className="aspect-square overflow-hidden bg-charcoal-light lg:aspect-[4/3]">
+            <div className="aspect-[4/3] overflow-hidden bg-charcoal-light sm:aspect-square lg:aspect-[4/3]">
               <iframe
                 title="En Chakai location"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.5!2d139.745!3d35.73!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c49ef!2sSengoku%20Station!5e0!3m2!1sen!2sjp!4v1"

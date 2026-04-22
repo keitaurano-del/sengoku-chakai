@@ -18,12 +18,15 @@
 
 html {
   scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
   background-color: var(--color-charcoal);
   color: var(--color-cream);
   font-family: var(--font-body);
+  -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
 }
 
 ::selection {
@@ -31,20 +34,57 @@ body {
   color: var(--color-charcoal);
 }
 
-/* Scrollbar */
-::-webkit-scrollbar {
-  width: 6px;
+/* Mobile viewport height fix */
+@supports (height: 100dvh) {
+  .min-h-screen-dynamic {
+    min-height: 100dvh;
+  }
 }
 
-::-webkit-scrollbar-track {
-  background: var(--color-charcoal);
+/* Smooth horizontal scroll for carousels */
+.scroll-snap-x {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.scroll-snap-x::-webkit-scrollbar {
+  display: none;
+}
+.scroll-snap-item {
+  scroll-snap-align: start;
 }
 
-::-webkit-scrollbar-thumb {
-  background: var(--color-deep-green);
-  border-radius: 3px;
+/* Touch-friendly tap targets */
+@media (pointer: coarse) {
+  a, button, [role="button"] {
+    min-height: 44px;
+    min-width: 44px;
+  }
 }
 
-::-webkit-scrollbar-thumb:hover {
-  background: var(--color-gold);
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Scrollbar (desktop only) */
+@media (pointer: fine) {
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--color-charcoal);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-deep-green);
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-gold);
+  }
 }

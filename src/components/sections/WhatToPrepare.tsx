@@ -24,7 +24,7 @@ export function WhatToPrepare() {
   const t = useTranslations("whatToPrepare");
 
   return (
-    <section id="prepare" className="bg-charcoal py-24 sm:py-32">
+    <section id="prepare" className="bg-charcoal py-16 sm:py-24 md:py-32">
       <Container>
         <FadeIn>
           <SectionHeading
@@ -34,22 +34,23 @@ export function WhatToPrepare() {
           />
         </FadeIn>
 
-        <div className="mx-auto max-w-2xl space-y-6">
+        <div className="mx-auto max-w-2xl space-y-3 sm:space-y-6">
           {items.map((item, i) => {
             const Icon = item.icon;
             return (
               <FadeIn key={item.key} delay={i * 0.1}>
-                <div className="flex items-start gap-4 border border-cream/10 bg-charcoal-light p-6">
+                <div className="flex items-start gap-3 border border-cream/10 bg-charcoal-light p-4 sm:gap-4 sm:p-6">
                   <div className="mt-0.5 shrink-0">
-                    <Icon size={20} className="text-gold" />
+                    <Icon size={18} className="text-gold sm:hidden" />
+                    <Icon size={20} className="text-gold hidden sm:block" />
                   </div>
-                  <div className="flex-1">
-                    <div className="mb-2 flex items-center gap-3">
-                      <h3 className="font-[family-name:var(--font-heading)] text-lg font-semibold text-cream">
+                  <div className="flex-1 min-w-0">
+                    <div className="mb-1.5 flex flex-wrap items-center gap-2 sm:mb-2 sm:gap-3">
+                      <h3 className="font-[family-name:var(--font-heading)] text-base font-semibold text-cream sm:text-lg">
                         {t(`items.${item.key}.title`)}
                       </h3>
                       <span
-                        className={`shrink-0 rounded-sm px-2 py-0.5 text-xs font-bold uppercase tracking-wider ${
+                        className={`shrink-0 rounded-sm px-1.5 py-0.5 text-[10px] font-bold uppercase tracking-wider sm:px-2 sm:text-xs ${
                           item.required
                             ? "bg-red-900/60 text-red-300"
                             : "bg-cream/10 text-cream/50"

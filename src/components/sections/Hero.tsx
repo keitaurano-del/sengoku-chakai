@@ -8,10 +8,9 @@ export function Hero() {
   const t = useTranslations("hero");
 
   return (
-    <section className="relative flex min-h-screen items-center justify-center overflow-hidden">
+    <section className="relative flex min-h-[100dvh] items-center justify-center overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-charcoal">
-        {/* Placeholder background — replace with actual image */}
         <div
           className="absolute inset-0 opacity-40"
           style={{
@@ -19,7 +18,6 @@ export function Hero() {
               "linear-gradient(135deg, #4A7C59 0%, #2C2C2C 40%, #2C2C2C 60%, #4A7C59 100%)",
           }}
         />
-        {/* Subtle texture overlay */}
         <div
           className="absolute inset-0 opacity-5"
           style={{
@@ -29,7 +27,7 @@ export function Hero() {
         />
       </div>
 
-      {/* Gradient overlay for readability */}
+      {/* Gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-charcoal/60 via-transparent to-charcoal" />
 
       {/* Max guests badge */}
@@ -37,20 +35,20 @@ export function Hero() {
         initial={{ opacity: 0, x: 20 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8, delay: 1.2 }}
-        className="absolute right-6 top-24 z-20 sm:right-10 sm:top-28"
+        className="absolute right-4 top-20 z-20 sm:right-10 sm:top-28"
       >
-        <span className="inline-block border border-gold/40 bg-charcoal/70 px-3 py-1.5 text-xs tracking-widest text-gold backdrop-blur-sm">
+        <span className="inline-block border border-gold/40 bg-charcoal/70 px-2.5 py-1 text-[10px] tracking-widest text-gold backdrop-blur-sm sm:px-3 sm:py-1.5 sm:text-xs">
           {t("maxGuests")}
         </span>
       </motion.div>
 
       {/* Content */}
-      <div className="relative z-10 mx-auto max-w-4xl px-4 text-center">
+      <div className="relative z-10 mx-auto max-w-4xl px-5 text-center sm:px-6">
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="mb-6 font-[family-name:var(--font-heading)] text-lg tracking-[0.3em] text-gold"
+          className="mb-4 font-[family-name:var(--font-heading)] text-base tracking-[0.3em] text-gold sm:mb-6 sm:text-lg"
         >
           {t("subtitle")}
         </motion.p>
@@ -59,7 +57,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="font-[family-name:var(--font-heading)] text-4xl font-bold leading-tight text-cream sm:text-5xl md:text-6xl lg:text-7xl whitespace-pre-line"
+          className="font-[family-name:var(--font-heading)] text-3xl font-bold leading-tight text-cream sm:text-4xl md:text-5xl lg:text-7xl whitespace-pre-line"
         >
           {t("heading")}
         </motion.h1>
@@ -68,7 +66,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-cream/70 sm:text-xl"
+          className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-cream/70 sm:mt-8 sm:text-lg md:text-xl"
         >
           {t("tagline")}
         </motion.p>
@@ -77,11 +75,11 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.8 }}
-          className="mt-12"
+          className="mt-8 sm:mt-12"
         >
           <Link
             href="/booking"
-            className="inline-block border border-gold bg-transparent px-10 py-4 text-sm font-medium uppercase tracking-[0.15em] text-gold transition-all duration-300 hover:bg-gold hover:text-charcoal"
+            className="inline-block w-full border border-gold bg-transparent px-8 py-4 text-sm font-medium uppercase tracking-[0.15em] text-gold transition-all duration-300 hover:bg-gold hover:text-charcoal active:bg-gold active:text-charcoal sm:w-auto sm:px-10"
           >
             {t("cta")}
           </Link>
@@ -93,7 +91,7 @@ export function Hero() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.5 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2"
+        className="absolute bottom-6 left-1/2 -translate-x-1/2 hidden sm:block"
       >
         <motion.div
           animate={{ y: [0, 8, 0] }}

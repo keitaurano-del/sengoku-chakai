@@ -15,7 +15,7 @@ export function TripAdvisor() {
   const t = useTranslations("tripadvisor");
 
   return (
-    <section className="bg-cream py-16 sm:py-24">
+    <section className="bg-cream py-14 sm:py-24">
       <Container>
         <FadeIn>
           <SectionHeading
@@ -25,11 +25,11 @@ export function TripAdvisor() {
           />
         </FadeIn>
 
-        {/* Review cards */}
-        <div className="grid gap-6 sm:grid-cols-3">
+        {/* Mobile: horizontal scroll carousel / Desktop: 3-col grid */}
+        <div className="scroll-snap-x -mx-4 flex gap-4 px-4 sm:mx-0 sm:grid sm:grid-cols-3 sm:gap-6 sm:px-0 sm:overflow-visible">
           {reviews.map((review, i) => (
-            <FadeIn key={review.key} delay={i * 0.12}>
-              <div className="flex h-full flex-col border border-charcoal/10 bg-white p-6">
+            <FadeIn key={review.key} delay={i * 0.12} className="scroll-snap-item min-w-[80vw] shrink-0 sm:min-w-0 sm:shrink">
+              <div className="flex h-full flex-col border border-charcoal/10 bg-white p-5 sm:p-6 rounded-lg sm:rounded-none">
                 <div className="mb-3 flex items-center gap-3">
                   <span className="text-2xl">{review.flag}</span>
                   <div className="flex gap-0.5">
@@ -51,12 +51,12 @@ export function TripAdvisor() {
 
         {/* CTA */}
         <FadeIn delay={0.3}>
-          <div className="mt-10 text-center">
+          <div className="mt-8 text-center sm:mt-10">
             <a
               href={TRIPADVISOR_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 border border-deep-green px-8 py-3 text-sm font-medium tracking-wide text-deep-green transition-all duration-300 hover:bg-deep-green hover:text-cream"
+              className="inline-flex items-center gap-2 border border-deep-green px-6 py-3 text-sm font-medium tracking-wide text-deep-green transition-all duration-300 hover:bg-deep-green hover:text-cream active:bg-deep-green active:text-cream sm:px-8"
             >
               <svg viewBox="0 0 24 24" className="h-5 w-5" fill="currentColor">
                 <circle cx="6.5" cy="13.5" r="2" />

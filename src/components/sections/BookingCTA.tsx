@@ -7,7 +7,7 @@ export function BookingCTA() {
   const t = useTranslations("bookingCta");
 
   return (
-    <section className="relative overflow-hidden bg-deep-green py-24 sm:py-32">
+    <section className="relative overflow-hidden bg-deep-green py-16 sm:py-24 md:py-32">
       {/* Decorative */}
       <div
         className="absolute inset-0 opacity-10"
@@ -19,16 +19,16 @@ export function BookingCTA() {
 
       <Container className="relative z-10 text-center">
         <FadeIn>
-          <h2 className="font-[family-name:var(--font-heading)] text-3xl font-bold text-cream sm:text-4xl lg:text-5xl">
+          <h2 className="font-[family-name:var(--font-heading)] text-2xl font-bold text-cream sm:text-3xl md:text-4xl lg:text-5xl">
             {t("heading")}
           </h2>
-          <p className="mx-auto mt-6 max-w-xl text-lg text-cream/70">
+          <p className="mx-auto mt-4 max-w-xl text-base text-cream/70 sm:mt-6 sm:text-lg">
             {t("description")}
           </p>
-          <div className="mt-10">
+          <div className="mt-8 sm:mt-10">
             <Link
               href="/booking"
-              className="inline-block border border-gold bg-gold px-10 py-4 text-sm font-medium uppercase tracking-[0.15em] text-charcoal transition-all duration-300 hover:bg-transparent hover:text-gold"
+              className="inline-block w-full border border-gold bg-gold px-8 py-4 text-sm font-medium uppercase tracking-[0.15em] text-charcoal transition-all duration-300 hover:bg-transparent hover:text-gold active:bg-transparent active:text-gold sm:w-auto sm:px-10"
             >
               {t("cta")}
             </Link>
