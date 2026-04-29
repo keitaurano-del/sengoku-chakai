@@ -22,14 +22,20 @@
   .logo { font-size: 13px; letter-spacing: 0.3em; color: var(--accent); }
   .nav-links a { font-size: 11px; letter-spacing: 0.15em; color: var(--muted); text-decoration: none; margin-left: 20px; }
 
-  .hero { background: var(--accent); color: #f2ede4; padding: 64px 24px 48px; min-height: 70vh; display: flex; flex-direction: column; justify-content: flex-end; position: relative; overflow: hidden; }
-  .hero::before { content: '円'; position: absolute; top: -20px; right: -10px; font-size: 200px; color: rgba(255,255,255,0.04); line-height: 1; }
-  .hero-tag { font-size: 10px; letter-spacing: 0.4em; color: rgba(242,237,228,0.5); margin-bottom: 16px; font-family: sans-serif; }
+  .hero { position: relative; min-height: 75vh; display: flex; flex-direction: column; justify-content: flex-end; overflow: hidden; }
+  .hero-bg { position: absolute; inset: 0; background-image: url('images/room2.jpg'); background-size: cover; background-position: center top; }
+  .hero-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(30,20,10,0.80) 0%, rgba(30,20,10,0.15) 55%); }
+  .hero-content { position: relative; padding: 40px 24px 48px; color: #f2ede4; }
+  .hero-tag { font-size: 10px; letter-spacing: 0.4em; color: rgba(242,237,228,0.55); margin-bottom: 16px; font-family: sans-serif; }
   .hero h1 { font-size: 34px; font-weight: 400; line-height: 1.25; margin-bottom: 16px; }
   .hero p { font-size: 13px; color: rgba(242,237,228,0.7); line-height: 1.7; margin-bottom: 32px; max-width: 260px; }
   .btn-light { display: inline-block; padding: 14px 28px; background: #f2ede4; color: var(--accent); font-size: 12px; letter-spacing: 0.2em; text-decoration: none; font-family: sans-serif; }
 
-  section { padding: 56px 24px; max-width: var(--max); margin: 0 auto; }
+  /* PHOTO STRIP */
+  .photo-strip { display: flex; gap: 2px; height: 140px; }
+  .photo-strip img { flex: 1; min-width: 0; object-fit: cover; }
+
+  section { padding: 52px 24px; max-width: var(--max); margin: 0 auto; }
   .section-label { font-size: 10px; letter-spacing: 0.4em; color: var(--green); margin-bottom: 10px; font-family: sans-serif; }
   h2 { font-size: 24px; font-weight: 400; margin-bottom: 24px; color: var(--accent); }
 
@@ -40,7 +46,7 @@
   .feature-item p { font-size: 12px; color: var(--muted); line-height: 1.6; }
 
   .plans-section { background: var(--bg2); }
-  .plans-section section { padding: 56px 24px; }
+  .plans-section section { padding: 52px 24px; }
   .plan-card { border: 1px solid var(--border); padding: 20px; margin-bottom: 12px; background: var(--bg); display: flex; justify-content: space-between; align-items: center; }
   .plan-card:last-of-type { margin-bottom: 0; }
   .plan-ja { font-size: 20px; font-weight: 400; color: var(--accent); }
@@ -59,11 +65,14 @@
   .step-item h3 { font-size: 14px; font-weight: 400; margin-bottom: 4px; }
   .step-item p { font-size: 12px; color: var(--muted); line-height: 1.6; }
 
+  /* ROOM PHOTO fullwidth */
+  .full-photo { width: 100%; height: 200px; object-fit: cover; display: block; }
+
   .access-inner { background: var(--accent); color: #f2ede4; padding: 28px; }
   .access-inner p { font-size: 13px; line-height: 1.9; color: rgba(242,237,228,0.8); }
   .access-inner strong { color: #f2ede4; }
 
-  .cta-section { padding: 56px 24px; text-align: center; background: var(--green); color: #f2ede4; }
+  .cta-section { padding: 52px 24px; text-align: center; background: var(--green); color: #f2ede4; }
   .cta-section h2 { color: #f2ede4; font-size: 22px; margin-bottom: 8px; }
   .cta-section p { font-size: 12px; color: rgba(242,237,228,0.7); margin-bottom: 28px; }
   .btn-white { display: inline-block; padding: 14px 32px; background: #f2ede4; color: var(--green); font-size: 12px; letter-spacing: 0.2em; text-decoration: none; font-family: sans-serif; }
@@ -88,10 +97,21 @@
 </nav>
 
 <div class="hero">
-  <div class="hero-tag">SENGOKU · TOKYO</div>
-  <h1>A tea ceremony<br>in old Tokyo.</h1>
-  <p>An authentic, small-group experience in Bunkyo. No formality. Just tea.</p>
-  <a href="https://docs.google.com/forms/d/e/1FAIpQLSeuo3Ec2k8oROTX2av_uw0re64AMw-z-gLBUZ-pcALj0ITa9w/viewform" target="_blank" class="btn-light">SEE PLANS</a>
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-tag">SENGOKU · TOKYO</div>
+    <h1>A tea ceremony<br>in old Tokyo.</h1>
+    <p>An authentic, small-group experience in Bunkyo. No formality. Just tea.</p>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeuo3Ec2k8oROTX2av_uw0re64AMw-z-gLBUZ-pcALj0ITa9w/viewform" target="_blank" class="btn-light">SEE PLANS</a>
+  </div>
+</div>
+
+<!-- PHOTO STRIP -->
+<div class="photo-strip">
+  <img src="images/tokonoma.jpg" alt="Tokonoma">
+  <img src="images/kettle.jpg" alt="Kettle">
+  <img src="images/room1.jpg" alt="Tea room">
 </div>
 
 <section>
@@ -171,6 +191,8 @@
     <a href="https://docs.google.com/forms/d/e/1FAIpQLSeuo3Ec2k8oROTX2av_uw0re64AMw-z-gLBUZ-pcALj0ITa9w/viewform" target="_blank" class="reserve-btn">RESERVE VIA GOOGLE FORM →</a>
   </section>
 </div>
+
+<img src="images/room3.jpg" alt="Tea room" class="full-photo">
 
 <section>
   <div class="section-label">HOW IT GOES</div>

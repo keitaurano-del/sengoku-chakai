@@ -21,9 +21,10 @@
   .logo { font-size: 12px; letter-spacing: 0.35em; color: var(--accent); }
   .nav-reserve { font-size: 11px; letter-spacing: 0.15em; color: var(--warm); text-decoration: none; border: 1px solid var(--warm); padding: 7px 14px; font-family: sans-serif; }
 
-  /* HERO — full bleed photo placeholder */
-  .hero { height: 85vh; background: linear-gradient(170deg, #1a2a1c 0%, #2c3820 40%, #1c2a18 100%); display: flex; flex-direction: column; justify-content: flex-end; padding: 0; position: relative; overflow: hidden; }
-  .hero-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.1) 60%); }
+  /* HERO — real photo */
+  .hero { height: 85vh; position: relative; overflow: hidden; display: flex; flex-direction: column; justify-content: flex-end; }
+  .hero-bg { position: absolute; inset: 0; background-image: url('images/room2.jpg'); background-size: cover; background-position: center; }
+  .hero-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0.08) 55%); }
   .hero-content { position: relative; padding: 32px 20px 40px; }
   .hero-badge { display: inline-block; border: 1px solid rgba(255,255,255,0.3); padding: 5px 12px; font-size: 10px; letter-spacing: 0.3em; color: rgba(255,255,255,0.6); margin-bottom: 16px; font-family: sans-serif; }
   .hero h1 { font-size: 32px; font-weight: 400; color: #fff; line-height: 1.2; margin-bottom: 12px; }
@@ -32,29 +33,22 @@
   .btn-filled { padding: 13px 24px; background: var(--accent); color: #fff; font-size: 11px; letter-spacing: 0.2em; text-decoration: none; font-family: sans-serif; }
   .btn-ghost { padding: 13px 24px; border: 1px solid rgba(255,255,255,0.4); color: rgba(255,255,255,0.8); font-size: 11px; letter-spacing: 0.2em; text-decoration: none; font-family: sans-serif; }
 
-  /* PHOTO STRIP (placeholder) */
-  .photo-strip { display: flex; gap: 3px; height: 160px; overflow: hidden; }
-  .photo-box { flex: 1; min-width: 0; }
-  .photo-box:nth-child(1) { background: #2d3a22; }
-  .photo-box:nth-child(2) { background: #3d4832; }
-  .photo-box:nth-child(3) { background: #4a5840; }
-  .photo-caption { font-size: 9px; color: var(--muted); text-align: center; margin-top: 3px; font-family: sans-serif; letter-spacing: 0.1em; }
-  .photo-strip-wrap { padding: 0; margin: 0; }
-  .photo-strip-wrap .caption-row { display: flex; gap: 3px; padding: 4px 0; }
+  /* PHOTO STRIP */
+  .photo-strip { display: flex; gap: 2px; height: 160px; }
+  .photo-strip img { flex: 1; min-width: 0; object-fit: cover; }
+  .photo-strip-wrap .caption-row { display: flex; gap: 2px; padding: 4px 0; }
   .photo-strip-wrap .caption-row span { flex: 1; font-size: 9px; color: var(--muted); text-align: center; font-family: sans-serif; letter-spacing: 0.08em; }
 
   section { padding: 52px 20px; max-width: var(--max); margin: 0 auto; }
   .label { font-size: 10px; letter-spacing: 0.4em; color: var(--accent); margin-bottom: 10px; font-family: sans-serif; }
   h2 { font-size: 22px; font-weight: 400; margin-bottom: 20px; }
 
-  /* HIGHLIGHT CARDS */
   .cards { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
   .card { background: var(--border); padding: 20px 16px; }
   .card-num { font-size: 10px; color: var(--accent); font-family: sans-serif; margin-bottom: 8px; }
   .card h3 { font-size: 13px; font-weight: 400; margin-bottom: 6px; }
   .card p { font-size: 11px; color: var(--muted); line-height: 1.6; }
 
-  /* PLANS */
   .plan-row { display: flex; align-items: center; padding: 18px 0; border-bottom: 1px solid var(--border); gap: 12px; }
   .plan-row:first-of-type { border-top: 1px solid var(--border); }
   .plan-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); flex-shrink: 0; }
@@ -67,7 +61,9 @@
   .reserve-block { margin-top: 24px; }
   .btn-book { display: block; padding: 15px; background: var(--accent); color: #fff; text-align: center; font-size: 12px; letter-spacing: 0.2em; text-decoration: none; font-family: sans-serif; }
 
-  /* FLOW */
+  /* FULLWIDTH PHOTO between sections */
+  .full-photo { width: 100%; height: 200px; object-fit: cover; display: block; }
+
   .flow { display: flex; flex-direction: column; position: relative; padding-left: 24px; }
   .flow::before { content: ''; position: absolute; left: 5px; top: 8px; bottom: 8px; width: 1px; background: var(--border); }
   .flow-item { position: relative; padding: 0 0 28px 20px; }
@@ -75,12 +71,10 @@
   .flow-item h3 { font-size: 14px; font-weight: 400; margin-bottom: 4px; }
   .flow-item p { font-size: 12px; color: var(--muted); line-height: 1.6; }
 
-  /* ACCESS */
   .access-card { border-left: 3px solid var(--accent); padding: 16px 20px; background: #f8f5f0; }
   .access-card p { font-size: 13px; line-height: 1.9; color: var(--text); }
   .access-card strong { color: var(--accent); }
 
-  /* CTA */
   .bottom-cta { background: var(--accent); padding: 52px 20px; text-align: center; color: #fff; }
   .bottom-cta h2 { color: #fff; font-size: 22px; margin-bottom: 8px; }
   .bottom-cta p { font-size: 12px; color: rgba(255,255,255,0.6); margin-bottom: 28px; line-height: 1.6; }
@@ -102,16 +96,16 @@
   <a href="https://docs.google.com/forms/d/e/1FAIpQLSeuo3Ec2k8oROTX2av_uw0re64AMw-z-gLBUZ-pcALj0ITa9w/viewform" target="_blank" class="nav-reserve">RESERVE</a>
 </nav>
 
-<!-- HERO -->
 <div class="hero">
+  <div class="hero-bg"></div>
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <div class="hero-badge">SENGOKU · BUNKYO · TOKYO</div>
     <h1>Tea ceremony<br>in Tokyo.</h1>
     <p>Small group. Authentic setting. English welcome.</p>
     <div class="hero-btns">
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeuo3Ec2k8oROTX2av_uw0re64AMw-z-gLBUZ-pcALj0ITa9w/viewform" target="_blank" class="btn-filled">SEE PLANS</a>
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeuo3Ec2k8oROTX2av_uw0re64AMw-z-gLBUZ-pcALj0ITa9w/viewform" target="_blank" class="btn-ghost">HOW IT WORKS</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeuo3Ec2k8oROTX2av_uw0re64AMw-z-gLBUZ-pcALj0ITa9w/viewform" target="_blank" class="btn-filled">RESERVE</a>
+      <a href="#" class="btn-ghost">SEE PLANS</a>
     </div>
   </div>
 </div>
@@ -119,18 +113,17 @@
 <!-- PHOTO STRIP -->
 <div class="photo-strip-wrap">
   <div class="photo-strip">
-    <div class="photo-box"></div>
-    <div class="photo-box"></div>
-    <div class="photo-box"></div>
+    <img src="images/room1.jpg" alt="Tea room">
+    <img src="images/tokonoma.jpg" alt="Tokonoma">
+    <img src="images/kettle.jpg" alt="Kettle">
   </div>
   <div class="caption-row">
     <span>Tea room</span>
-    <span>Ceremony</span>
-    <span>Matcha</span>
+    <span>Tokonoma</span>
+    <span>Kama</span>
   </div>
 </div>
 
-<!-- HIGHLIGHTS -->
 <section>
   <div class="label">THE EXPERIENCE</div>
   <h2>What's included</h2>
@@ -158,7 +151,6 @@
   </div>
 </section>
 
-<!-- PLANS -->
 <section style="padding-top: 0; border-top: 1px solid var(--border);">
   <div class="label">PLANS</div>
   <h2>Choose your plan</h2>
@@ -200,7 +192,8 @@
   </div>
 </section>
 
-<!-- FLOW -->
+<img src="images/room3.jpg" alt="Tea room" class="full-photo">
+
 <section style="border-top: 1px solid var(--border);">
   <div class="label">HOW IT WORKS</div>
   <h2>Session flow</h2>
@@ -223,7 +216,6 @@
   </div>
 </section>
 
-<!-- ACCESS -->
 <section style="border-top: 1px solid var(--border); padding-bottom: 52px;">
   <div class="label">ACCESS</div>
   <h2>Location</h2>
@@ -237,7 +229,6 @@
   </div>
 </section>
 
-<!-- CTA -->
 <div class="bottom-cta">
   <h2>Book your session</h2>
   <p>Reserve via Google Form.<br>We confirm within 24 hours.</p>
@@ -246,7 +237,7 @@
 
 <footer>
   <p>© 2026 En Chakai 円茶会</p>
-  <a href="#">info@en-chakai.com</a>
+  <a href="mailto:info@en-chakai.com">info@en-chakai.com</a>
 </footer>
 
 </body>
