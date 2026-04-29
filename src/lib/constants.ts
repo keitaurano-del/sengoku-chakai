@@ -50,6 +50,13 @@ export const CONTACT = {
   },
 };
 
+// Stripe Payment Links — KeitaさんがStripeダッシュボードで作成後に差し替え
+export const STRIPE_PAYMENT_LINKS = {
+  ume: "https://buy.stripe.com/UME_PLACEHOLDER",
+  take: "https://buy.stripe.com/TAKE_PLACEHOLDER",
+  matsu: "https://buy.stripe.com/MATSU_PLACEHOLDER",
+};
+
 export const GOOGLE_FORMS = {
   booking: "https://docs.google.com/forms/d/e/1FAIpQLSeuo3Ec2k8oROTX2av_uw0re64AMw-z-gLBUZ-pcALj0ITa9w/viewform",
   cancellation: "https://docs.google.com/forms/d/e/1FAIpQLSeuo3Ec2k8oROTX2av_uw0re64AMw-z-gLBUZ-pcALj0ITa9w/viewform",

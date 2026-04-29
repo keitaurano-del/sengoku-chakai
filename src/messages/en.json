@@ -50,7 +50,7 @@
     "recommended": "Recommended",
     "mostPopular": "Most Popular",
     "ume": {
-      "name": "梅 Ume",
+      "name": "梅 Ume — Plum",
       "subtitle": "Introduction",
       "description": "A graceful introduction to the world of chado. Observe and participate in a simplified tea ceremony while enjoying seasonal wagashi.",
       "includes": [
@@ -61,7 +61,7 @@
       ]
     },
     "take": {
-      "name": "竹 Take",
+      "name": "竹 Take — Bamboo",
       "subtitle": "Immersion",
       "description": "A deeper engagement with the tea ceremony. Learn the fundamental movements and philosophy of chado, and prepare your own bowl of matcha.",
       "includes": [
@@ -73,7 +73,7 @@
       ]
     },
     "matsu": {
-      "name": "松 Matsu",
+      "name": "松 Matsu — Pine",
       "subtitle": "The Complete Way",
       "description": "The definitive chado experience. From the garden path to the final bow, experience every element of an authentic tea gathering as it has been practiced for centuries.",
       "includes": [

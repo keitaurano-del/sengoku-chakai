@@ -2,7 +2,7 @@ import { useTranslations } from "next-intl";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { FadeIn } from "@/components/ui/FadeIn";
-import { PLANS, GOOGLE_FORMS } from "@/lib/constants";
+import { PLANS, STRIPE_PAYMENT_LINKS } from "@/lib/constants";
 
 export function Plans() {
   const t = useTranslations("plans");
@@ -84,7 +84,7 @@ export function Plans() {
                   </ul>
 
                   <a
-                    href={GOOGLE_FORMS.booking}
+                    href={STRIPE_PAYMENT_LINKS[plan.id as keyof typeof STRIPE_PAYMENT_LINKS]}
                     target="_blank"
                     rel="noopener noreferrer"
                     className={`block text-center py-3.5 text-sm font-medium uppercase tracking-[0.1em] transition-all duration-300 active:opacity-80 ${
