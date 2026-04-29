@@ -8,7 +8,6 @@ import { useState, useRef, useEffect } from "react";
 const localeLabels: Record<string, string> = {
   en: "EN",
   ja: "日本語",
-  zh: "中文",
 };
 
 export function LanguageSwitcher() {
@@ -44,7 +43,7 @@ export function LanguageSwitcher() {
             <button
               key={loc}
               onClick={() => {
-                router.replace(pathname, { locale: loc as "en" | "ja" | "zh" });
+                router.replace(pathname, { locale: loc as "en" | "ja" });
                 setOpen(false);
               }}
               className={`block w-full px-4 py-2 text-left text-sm transition-colors hover:bg-deep-green/50 ${

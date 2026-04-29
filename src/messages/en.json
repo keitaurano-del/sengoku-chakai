@@ -198,17 +198,32 @@
       "heading": "Reservation Received",
       "message": "Thank you for your reservation. We will send a confirmation to your email within 24 hours.",
       "backHome": "Return to Homepage"
-    }
+    },
+    "label": "Reservation",
+    "cta": "Reserve via Google Form",
+    "note": "The form will open in a new window. We will send a confirmation email within 24 hours."
   },
   "cancellation": {
     "heading": "Cancellation Policy",
     "policy": {
       "intro": "We understand that plans may change. Please review our cancellation policy below.",
       "rules": [
-        { "period": "7+ days before", "refund": "Full refund" },
-        { "period": "3–6 days before", "refund": "50% refund (50% cancellation fee)" },
-        { "period": "1–2 days before", "refund": "20% refund (80% cancellation fee)" },
-        { "period": "Same day / No-show", "refund": "No refund (100% cancellation fee)" }
+        {
+          "period": "7+ days before",
+          "refund": "Full refund"
+        },
+        {
+          "period": "3–6 days before",
+          "refund": "50% refund (50% cancellation fee)"
+        },
+        {
+          "period": "1–2 days before",
+          "refund": "20% refund (80% cancellation fee)"
+        },
+        {
+          "period": "Same day / No-show",
+          "refund": "No refund (100% cancellation fee)"
+        }
       ],
       "note": "All cancellation requests will be processed within 2 business days. Refunds will be issued to the original payment method."
     },
@@ -226,7 +241,8 @@
       "success": {
         "heading": "Request Received",
         "message": "We have received your cancellation request. You will receive a confirmation email within 2 business days."
-      }
+      },
+      "cta": "Go to Cancellation Form"
     }
   },
   "footer": {

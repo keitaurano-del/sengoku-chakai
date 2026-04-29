@@ -1,17 +1,16 @@
-import { useTranslations } from "next-intl";
-import { Container } from "@/components/ui/Container";
-import { SectionHeading } from "@/components/ui/SectionHeading";
-import { BookingForm } from "@/components/booking/BookingForm";
+import { getTranslations } from "next-intl/server";
+import { BookingContent } from "@/components/booking/BookingContent";
+
+type Props = {
+  params: Promise<{ locale: string }>;
+};
+
+export async function generateMetadata({ params }: Props) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "booking" });
+  return { title: t("heading") };
+}
 
 export default function BookingPage() {
-  const t = useTranslations("booking");
-
-  return (
-    <section className="bg-charcoal pt-28 pb-24">
-      <Container>
-        <SectionHeading heading={t("heading")} description={t("description")} />
-        <BookingForm />
-      </Container>
-    </section>
-  );
+  return <BookingContent />;
 }

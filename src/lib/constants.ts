@@ -43,11 +43,15 @@ export const CONTACT = {
   address: {
     en: "Sengoku, Bunkyo-ku, Tokyo",
     ja: "東京都文京区千石",
-    zh: "东京都文京区千石",
   },
   station: {
     en: "Sengoku Station (Toei Mita Line) — 5 min walk",
     ja: "都営三田線 千石駅 徒歩5分",
-    zh: "都营三田线 千石站 步行5分钟",
   },
+};
+
+// Google Form URLs — Keitaさんが作成後に差し替えてください
+export const GOOGLE_FORMS = {
+  booking: "https://docs.google.com/forms/d/e/BOOKING_FORM_ID/viewform",
+  cancellation: "https://docs.google.com/forms/d/e/CANCEL_FORM_ID/viewform",
 };

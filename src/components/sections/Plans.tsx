@@ -2,8 +2,7 @@ import { useTranslations } from "next-intl";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { FadeIn } from "@/components/ui/FadeIn";
-import { PLANS } from "@/lib/constants";
-import { Link } from "@/i18n/navigation";
+import { PLANS, GOOGLE_FORMS } from "@/lib/constants";
 
 export function Plans() {
   const t = useTranslations("plans");
@@ -84,8 +83,10 @@ export function Plans() {
                     ))}
                   </ul>
 
-                  <Link
-                    href={`/booking?plan=${plan.id}`}
+                  <a
+                    href={GOOGLE_FORMS.booking}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className={`block text-center py-3.5 text-sm font-medium uppercase tracking-[0.1em] transition-all duration-300 active:opacity-80 ${
                       isMostPopular || isRecommended
                         ? "bg-gold text-charcoal hover:bg-gold-light"
@@ -93,7 +94,7 @@ export function Plans() {
                     }`}
                   >
                     {t("reserve")}
-                  </Link>
+                  </a>
                 </div>
               </FadeIn>
             );

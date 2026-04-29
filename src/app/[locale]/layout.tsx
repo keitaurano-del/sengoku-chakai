@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { NextIntlClientProvider, useMessages } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
-import { Cormorant_Garamond, Inter, Noto_Sans_JP, Noto_Sans_SC } from "next/font/google";
+import { Cormorant_Garamond, Inter, Noto_Sans_JP } from "next/font/google";
 import { routing } from "@/i18n/routing";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
@@ -24,13 +24,6 @@ const inter = Inter({
 const notoJP = Noto_Sans_JP({
   subsets: ["latin"],
   variable: "--font-jp",
-  weight: ["400", "500", "700"],
-  display: "swap",
-});
-
-const notoSC = Noto_Sans_SC({
-  subsets: ["latin"],
-  variable: "--font-zh",
   weight: ["400", "500", "700"],
   display: "swap",
 });
@@ -63,16 +56,12 @@ export default async function LocaleLayout({ children, params }: Props) {
 
   const messages = (await import(`../../messages/${locale}.json`)).default;
 
-  const fontClass = locale === "ja"
-    ? notoJP.className
-    : locale === "zh"
-    ? notoSC.className
-    : inter.className;
+  const fontClass = locale === "ja" ? notoJP.className : inter.className;
 
   return (
     <html
       lang={locale}
-      className={`${cormorant.variable} ${inter.variable} ${notoJP.variable} ${notoSC.variable} antialiased`}
+      className={`${cormorant.variable} ${inter.variable} ${notoJP.variable} antialiased`}
     >
       <body className={`min-h-screen flex flex-col ${fontClass}`}>
         <NextIntlClientProvider locale={locale} messages={messages}>
