@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pattern B — Warm Paper</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root {
+    --bg: #f2ede4;
+    --bg2: #e8e2d8;
+    --text: #2a2620;
+    --muted: #7a7060;
+    --accent: #5c4a32;
+    --green: #3d5c40;
+    --border: rgba(0,0,0,0.08);
+    --max: 480px;
+  }
+  body { background: var(--bg); color: var(--text); font-family: 'Georgia', serif; }
+
+  nav { display: flex; justify-content: space-between; align-items: center; padding: 20px 24px; border-bottom: 1px solid var(--border); background: var(--bg); }
+  .logo { font-size: 13px; letter-spacing: 0.3em; color: var(--accent); }
+  .nav-links a { font-size: 11px; letter-spacing: 0.15em; color: var(--muted); text-decoration: none; margin-left: 20px; }
+
+  .hero { background: var(--accent); color: #f2ede4; padding: 64px 24px 48px; min-height: 70vh; display: flex; flex-direction: column; justify-content: flex-end; position: relative; overflow: hidden; }
+  .hero::before { content: '円'; position: absolute; top: -20px; right: -10px; font-size: 200px; color: rgba(255,255,255,0.04); line-height: 1; }
+  .hero-tag { font-size: 10px; letter-spacing: 0.4em; color: rgba(242,237,228,0.5); margin-bottom: 16px; font-family: sans-serif; }
+  .hero h1 { font-size: 34px; font-weight: 400; line-height: 1.25; margin-bottom: 16px; }
+  .hero p { font-size: 13px; color: rgba(242,237,228,0.7); line-height: 1.7; margin-bottom: 32px; max-width: 260px; }
+  .btn-light { display: inline-block; padding: 14px 28px; background: #f2ede4; color: var(--accent); font-size: 12px; letter-spacing: 0.2em; text-decoration: none; font-family: sans-serif; }
+
+  section { padding: 56px 24px; max-width: var(--max); margin: 0 auto; }
+  .section-label { font-size: 10px; letter-spacing: 0.4em; color: var(--green); margin-bottom: 10px; font-family: sans-serif; }
+  h2 { font-size: 24px; font-weight: 400; margin-bottom: 24px; color: var(--accent); }
+
+  .feature-list { display: flex; flex-direction: column; gap: 20px; }
+  .feature-item { display: flex; gap: 16px; }
+  .feature-icon { width: 36px; height: 36px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; font-size: 16px; flex-shrink: 0; }
+  .feature-item h3 { font-size: 14px; font-weight: 400; margin-bottom: 4px; }
+  .feature-item p { font-size: 12px; color: var(--muted); line-height: 1.6; }
+
+  .plans-section { background: var(--bg2); }
+  .plans-section section { padding: 56px 24px; }
+  .plan-card { border: 1px solid var(--border); padding: 20px; margin-bottom: 12px; background: var(--bg); display: flex; justify-content: space-between; align-items: center; }
+  .plan-card:last-of-type { margin-bottom: 0; }
+  .plan-ja { font-size: 20px; font-weight: 400; color: var(--accent); }
+  .plan-en { font-size: 11px; color: var(--muted); font-family: sans-serif; margin-top: 2px; }
+  .plan-meta { font-size: 11px; color: var(--muted); margin-top: 6px; font-family: sans-serif; }
+  .plan-right { text-align: right; }
+  .plan-right strong { display: block; font-size: 22px; color: var(--accent); font-weight: 400; }
+  .plan-right span { font-size: 10px; color: var(--muted); font-family: sans-serif; }
+  .reserve-btn { display: block; margin-top: 20px; padding: 15px; background: var(--accent); color: #f2ede4; text-align: center; font-size: 12px; letter-spacing: 0.2em; text-decoration: none; font-family: sans-serif; }
+
+  .divider { height: 1px; background: var(--border); margin: 0 24px; }
+
+  .steps-row { display: flex; flex-direction: column; gap: 0; }
+  .step-item { padding: 20px 0; display: flex; gap: 16px; border-bottom: 1px solid var(--border); }
+  .step-num { font-size: 11px; font-family: sans-serif; color: var(--green); letter-spacing: 0.1em; padding-top: 3px; min-width: 24px; }
+  .step-item h3 { font-size: 14px; font-weight: 400; margin-bottom: 4px; }
+  .step-item p { font-size: 12px; color: var(--muted); line-height: 1.6; }
+
+  .access-inner { background: var(--accent); color: #f2ede4; padding: 28px; }
+  .access-inner p { font-size: 13px; line-height: 1.9; color: rgba(242,237,228,0.8); }
+  .access-inner strong { color: #f2ede4; }
+
+  .cta-section { padding: 56px 24px; text-align: center; background: var(--green); color: #f2ede4; }
+  .cta-section h2 { color: #f2ede4; font-size: 22px; margin-bottom: 8px; }
+  .cta-section p { font-size: 12px; color: rgba(242,237,228,0.7); margin-bottom: 28px; }
+  .btn-white { display: inline-block; padding: 14px 32px; background: #f2ede4; color: var(--green); font-size: 12px; letter-spacing: 0.2em; text-decoration: none; font-family: sans-serif; }
+
+  footer { padding: 28px 24px; text-align: center; border-top: 1px solid var(--border); }
+  footer p { font-size: 11px; color: var(--muted); font-family: sans-serif; }
+
+  .back { position: fixed; top: 16px; right: 16px; background: var(--accent); color: #f2ede4; font-size: 11px; padding: 8px 12px; text-decoration: none; z-index: 100; }
+</style>
+</head>
+<body>
+
+<a href="index.html" class="back">← Back</a>
+
+<nav>
+  <div class="logo">EN CHAKAI 円茶会</div>
+  <div class="nav-links">
+    <a href="#">Plans</a>
+    <a href="#">Access</a>
+    <a href="#">Reserve</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="hero-tag">SENGOKU · TOKYO</div>
+  <h1>A tea ceremony<br>in old Tokyo.</h1>
+  <p>An authentic, small-group experience in Bunkyo. No formality. Just tea.</p>
+  <a href="#" class="btn-light">SEE PLANS</a>
+</div>
+
+<section>
+  <div class="section-label">WHAT YOU'LL DO</div>
+  <h2>The experience</h2>
+  <div class="feature-list">
+    <div class="feature-item">
+      <div class="feature-icon">🍵</div>
+      <div>
+        <h3>Seasonal sweets</h3>
+        <p>Start with handmade wagashi before the ceremony begins.</p>
+      </div>
+    </div>
+    <div class="feature-item">
+      <div class="feature-icon">🎋</div>
+      <div>
+        <h3>Watch the ceremony</h3>
+        <p>Your host prepares matcha in the traditional style. English guidance throughout.</p>
+      </div>
+    </div>
+    <div class="feature-item">
+      <div class="feature-icon">🌿</div>
+      <div>
+        <h3>Make your own bowl</h3>
+        <p>Whisk your own matcha using a chasen. Take your time.</p>
+      </div>
+    </div>
+    <div class="feature-item">
+      <div class="feature-icon">🏡</div>
+      <div>
+        <h3>Max 6 guests</h3>
+        <p>Intimate sessions only. Never rushed, never crowded.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<div class="plans-section">
+  <section>
+    <div class="section-label">PLANS & PRICING</div>
+    <h2>Choose your plan</h2>
+    <div class="plan-card">
+      <div>
+        <div class="plan-ja">梅 Ume</div>
+        <div class="plan-en">Plum — Introduction</div>
+        <div class="plan-meta">60 min · up to 6 guests</div>
+      </div>
+      <div class="plan-right">
+        <strong>¥9,000</strong>
+        <span>/ person</span>
+      </div>
+    </div>
+    <div class="plan-card">
+      <div>
+        <div class="plan-ja">竹 Take</div>
+        <div class="plan-en">Bamboo — Immersion</div>
+        <div class="plan-meta">90 min · up to 4 guests</div>
+      </div>
+      <div class="plan-right">
+        <strong>¥15,000</strong>
+        <span>/ person</span>
+      </div>
+    </div>
+    <div class="plan-card">
+      <div>
+        <div class="plan-ja">松 Matsu</div>
+        <div class="plan-en">Pine — Full ceremony</div>
+        <div class="plan-meta">120 min · up to 2 guests</div>
+      </div>
+      <div class="plan-right">
+        <strong>¥25,000</strong>
+        <span>/ person</span>
+      </div>
+    </div>
+    <a href="#" class="reserve-btn">RESERVE VIA GOOGLE FORM →</a>
+  </section>
+</div>
+
+<section>
+  <div class="section-label">HOW IT GOES</div>
+  <h2>Session flow</h2>
+  <div class="steps-row">
+    <div class="step-item">
+      <div class="step-num">01</div>
+      <div>
+        <h3>Arrive & be seated</h3>
+        <p>Enter the tatami room and enjoy wagashi sweets.</p>
+      </div>
+    </div>
+    <div class="step-item">
+      <div class="step-num">02</div>
+      <div>
+        <h3>Ceremony demonstration</h3>
+        <p>Watch and learn. Your host explains each step in English.</p>
+      </div>
+    </div>
+    <div class="step-item">
+      <div class="step-num">03</div>
+      <div>
+        <h3>Make & drink your matcha</h3>
+        <p>Whisk your own bowl. No experience needed.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top: 0;">
+  <div class="section-label">ACCESS</div>
+  <h2>Getting here</h2>
+  <div class="access-inner">
+    <p>
+      <strong>Sengoku, Bunkyo-ku, Tokyo</strong><br><br>
+      Sengoku Station (Toei Mita Line)<br>
+      5 min walk from Exit A4<br><br>
+      Sessions at: 10:00 · 14:00 · 16:00
+    </p>
+  </div>
+</section>
+
+<div class="cta-section">
+  <h2>Ready to book?</h2>
+  <p>Reserve via Google Form. Confirmation within 24 hours.</p>
+  <a href="#" class="btn-white">RESERVE NOW</a>
+</div>
+
+<footer>
+  <p>© 2026 En Chakai 円茶会 · info@en-chakai.com</p>
+</footer>
+
+</body>
+</html>
