@@ -214,22 +214,18 @@
         },
         {
           "period": "3–6 days before",
-          "refund": "50% refund (50% cancellation fee)"
+          "refund": "50% refund"
         },
         {
-          "period": "1–2 days before",
-          "refund": "20% refund (80% cancellation fee)"
-        },
-        {
-          "period": "Same day / No-show",
-          "refund": "No refund (100% cancellation fee)"
+          "period": "2 days or less",
+          "refund": "No refund"
         }
       ],
-      "note": "All cancellation requests will be processed within 2 business days. Refunds will be issued to the original payment method."
+      "note": "Cancellation requests must be submitted via the form below. We will process your request within 24 hours."
     },
     "form": {
       "heading": "Request Cancellation",
-      "description": "Please provide your booking details to request a cancellation.",
+      "description": "Please fill in the form below to cancel your reservation. We will process your request within 24 hours.",
       "fields": {
         "email": "Email used for booking",
         "name": "Full Name",
@@ -242,7 +238,7 @@
         "heading": "Request Received",
         "message": "We have received your cancellation request. You will receive a confirmation email within 2 business days."
       },
-      "cta": "Go to Cancellation Form"
+      "cta": "Submit Cancellation Request"
     }
   },
   "footer": {

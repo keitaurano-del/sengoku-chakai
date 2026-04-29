@@ -50,8 +50,8 @@ export const CONTACT = {
   },
 };
 
-// Google Form URLs — Keitaさんが作成後に差し替えてください
 export const GOOGLE_FORMS = {
-  booking: "https://docs.google.com/forms/d/e/BOOKING_FORM_ID/viewform",
+  booking: "https://docs.google.com/forms/d/e/1FAIpQLSeuo3Ec2k8oROTX2av_uw0re64AMw-z-gLBUZ-pcALj0ITa9w/viewform",
+  // Cancellation form URL — to be updated once form is created
   cancellation: "https://docs.google.com/forms/d/e/CANCEL_FORM_ID/viewform",
 };
